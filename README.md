@@ -3,7 +3,11 @@
 ## Mac OSX / Linux
 1. ensure you have bundler installed
 2. bundle install
-3. bundle exec rake PROFILE= **see below
-4. brew install chromedriver
 
-NOTE: Firefox for run
+
+NOTE: Firefox or Chrome for run
+
+Commands to Run - cucumber -f pretty -f html -o artifcats/index.html
+
+Reports are available under - artifacts folder
+You can pass GETHAR=True to get the har files for the run on Firefox to review the page response times
