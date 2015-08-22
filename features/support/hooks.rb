@@ -24,7 +24,7 @@ Before do |scenario|
 	add_har_to_browser(profile)
 
 
-	@browser = Watir::Browser.new :firefox, :profile => profile
+	@browser = Watir::Browser.new :chrome#, :profile => profile
 
 	@browser.driver.manage.window.maximize
 
@@ -55,7 +55,7 @@ After do |scenario|
 
 	@browser.quit
 
-  view_har_file
+
 
   #proxy_listener.hars #=> [#<HAR::Archive:0x-27066c42d7e75fa6>, #<HAR::Archive:0x-d7e75fa627066c42>]
   #proxy.close
@@ -65,6 +65,10 @@ end
 
 
 
-
-
+at_exit do
+	if ENV['GETHAR'] == "True"
+		ENV['BROWSER'] = "" # Emptying the Browser Argument
+		view_har_file
+	end
+end
 

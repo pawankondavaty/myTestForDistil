@@ -9,7 +9,7 @@ require 'logger'
 require 'singleton'
 require 'har'
 require "net/http"
-require 'browsermob/proxy'
+#require 'browsermob/proxy'
 require 'watir-webdriver-performance'
 require_relative '../../lib/util/har_parser'
 require_relative '../../lib/util/utility_methods'

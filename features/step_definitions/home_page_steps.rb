@@ -14,11 +14,10 @@ end
 
 Then /^I verify page headers to ensure page is not cached$/ do
   on HomePage do |page|
-    uri = URI("http://www.swedishfurnitureparts.com/")
-    response = Net::HTTP.get_response(uri)
-   # puts "+++++++"
-   # puts response.to_s
-    expect(response).to_not include("cache")
+   uri = URI(@url)
+   response = Net::HTTP.get_response(uri)
+    puts response['Cache-Control']
+    expect(response['Cache-Control']).to be(nil)
   end
 end
 

@@ -2,11 +2,7 @@ Browser:
   browserName: Firefox
   
 Disposable Mail:
-  mailAddressName: http://mailinator.com
+  mailAddressName: http://www.swedishfurnitureparts.com
   
 Timeout:
   timeOutInSec: 60
-  
-PostLinks:
-  nonogpLink: https://www.google.com
-  ogpLink: https://www.youtube.com/watch?v=okFKnjfA_uE
