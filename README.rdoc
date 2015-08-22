@@ -1,0 +1,48 @@
+
+
+
+# Installation and Usage
+
+# Mac OSX / Linux
+1. ensure you have bundler installed
+2. bundle install
+3. bundle exec rake PROFILE=<see below>
+4. brew install chromedriver
+
+NOTE: use the PROFILE=firefox_dev_ci for local dev runs
+
+
+# profiles for running against the ci environment with @ci tag
+firefox_ci
+safari_ci
+mac_chrome_ci
+win_chrome_ci
+ie_ci
+
+# profiles for running against the dev environment with @ci tag
+firefox_dev_ci
+safari_dev_ci
+mac_chrome_dev_ci
+win_chrome_dev_ci
+ie_dev_ci
+
+#regression profiles for running against the dev environment- long running time
+mac_chrome_dev_regression
+win_chrome_dev_regression
+firefox_dev_regression
+ie_dev_regression
+safari_dev_regression
+
+#regression profiles for running against the ci environment- long running time
+mac_chrome_ci_regression
+win_chrome_ci_regression
+firefox_ci_regression
+ie_ci_regression
+safari_ci_regression
+
+# Windows
+1. Install Ruby, Pik, Bundler and Wac (see blog post: http://wp.me/p98zF-ca)
+2. Make sure you 'pik' Ruby
+3. $ bundle install
+4. $ bundle exec rake PROFILE=sandbox
+

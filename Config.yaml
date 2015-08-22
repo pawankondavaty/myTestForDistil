@@ -1,0 +1,12 @@
+Browser:
+  browserName: Firefox
+  
+Disposable Mail:
+  mailAddressName: http://mailinator.com
+  
+Timeout:
+  timeOutInSec: 60
+  
+PostLinks:
+  nonogpLink: https://www.google.com
+  ogpLink: https://www.youtube.com/watch?v=okFKnjfA_uE
